@@ -1,5 +1,5 @@
 PKG_NAME := pypi-types_setuptools
-URL = https://files.pythonhosted.org/packages/fa/80/d9f62767f364cc51f386034f16035ea33779937fb44bfd82dadc00adf691/types-setuptools-57.4.8.tar.gz
+URL = https://files.pythonhosted.org/packages/65/8a/67c6299b90c7b3d97d674fb62af19a363a1f92c5eb64ddd0451e4eb04868/types-setuptools-57.4.9.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
