@@ -4,7 +4,7 @@
 #
 Name     : pypi-types_setuptools
 Version  : 65.1.0
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/ca/71/9ffdc75dcf2bbaf589f70336f782e7870027022307a4ae1e3a25f1f12b28/types-setuptools-65.1.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ca/71/9ffdc75dcf2bbaf589f70336f782e7870027022307a4ae1e3a25f1f12b28/types-setuptools-65.1.0.tar.gz
 Summary  : Typing stubs for setuptools
