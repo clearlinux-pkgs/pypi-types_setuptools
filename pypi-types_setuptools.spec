@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_setuptools
-Version  : 67.6.0.6
-Release  : 60
-URL      : https://files.pythonhosted.org/packages/c4/8b/c331a0cc564190ea33c2b3fde248e55f17647da750bbdbf5b9ba08860d2d/types-setuptools-67.6.0.6.tar.gz
-Source0  : https://files.pythonhosted.org/packages/c4/8b/c331a0cc564190ea33c2b3fde248e55f17647da750bbdbf5b9ba08860d2d/types-setuptools-67.6.0.6.tar.gz
+Version  : 67.6.0.7
+Release  : 61
+URL      : https://files.pythonhosted.org/packages/2e/84/94effff982ffae657530e53f032a60ddc2774c09a281f07ba3ab535e9581/types-setuptools-67.6.0.7.tar.gz
+Source0  : https://files.pythonhosted.org/packages/2e/84/94effff982ffae657530e53f032a60ddc2774c09a281f07ba3ab535e9581/types-setuptools-67.6.0.7.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types-setuptools-67.6.0.6
-cd %{_builddir}/types-setuptools-67.6.0.6
+%setup -q -n types-setuptools-67.6.0.7
+cd %{_builddir}/types-setuptools-67.6.0.7
 pushd ..
-cp -a types-setuptools-67.6.0.6 buildavx2
+cp -a types-setuptools-67.6.0.7 buildavx2
 popd
 
 %build
@@ -52,7 +52,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1680015204
+export SOURCE_DATE_EPOCH=1680706382
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
