@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-types_setuptools
-Version  : 67.7.0.0
-Release  : 63
-URL      : https://files.pythonhosted.org/packages/b8/7f/8d4b6a2ac7f7792cab397a4a7441c1913a4f065a78595214a37075c15c3f/types-setuptools-67.7.0.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/b8/7f/8d4b6a2ac7f7792cab397a4a7441c1913a4f065a78595214a37075c15c3f/types-setuptools-67.7.0.0.tar.gz
+Version  : 67.7.0.1
+Release  : 64
+URL      : https://files.pythonhosted.org/packages/d3/cd/ebb55f567408a0652d930a00a4a2d5bd331b652a7d1c35cce9a5a3169b09/types-setuptools-67.7.0.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/d3/cd/ebb55f567408a0652d930a00a4a2d5bd331b652a7d1c35cce9a5a3169b09/types-setuptools-67.7.0.1.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -41,10 +41,10 @@ python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types-setuptools-67.7.0.0
-cd %{_builddir}/types-setuptools-67.7.0.0
+%setup -q -n types-setuptools-67.7.0.1
+cd %{_builddir}/types-setuptools-67.7.0.1
 pushd ..
-cp -a types-setuptools-67.7.0.0 buildavx2
+cp -a types-setuptools-67.7.0.1 buildavx2
 popd
 
 %build
@@ -52,15 +52,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1682273580
+export SOURCE_DATE_EPOCH=1682975549
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
-export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
