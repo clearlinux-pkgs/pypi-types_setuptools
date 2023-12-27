@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_setuptools
 Version  : 69.0.0.0
-Release  : 79
+Release  : 80
 URL      : https://files.pythonhosted.org/packages/aa/dc/27d4819c27b504bbd2e8ae5aa907fe72c70af8ff90b8b4cdb96316275844/types-setuptools-69.0.0.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/aa/dc/27d4819c27b504bbd2e8ae5aa907fe72c70af8ff90b8b4cdb96316275844/types-setuptools-69.0.0.0.tar.gz
 Summary  : Typing stubs for setuptools
