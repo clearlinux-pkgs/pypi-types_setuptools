@@ -6,10 +6,10 @@
 # autospec commit: ab27b0e
 #
 Name     : pypi-types_setuptools
-Version  : 69.0.0.20240106
-Release  : 81
-URL      : https://files.pythonhosted.org/packages/c5/25/da153b9ba3bf57757870c3831f7a15abb4a9dfd55a1b78d461389b4ee9f7/types-setuptools-69.0.0.20240106.tar.gz
-Source0  : https://files.pythonhosted.org/packages/c5/25/da153b9ba3bf57757870c3831f7a15abb4a9dfd55a1b78d461389b4ee9f7/types-setuptools-69.0.0.20240106.tar.gz
+Version  : 69.0.0.20240115
+Release  : 82
+URL      : https://files.pythonhosted.org/packages/07/64/bd87e18c7cdd21636140750ba7a3f4c6551c1baef969445a927185ec374a/types-setuptools-69.0.0.20240115.tar.gz
+Source0  : https://files.pythonhosted.org/packages/07/64/bd87e18c7cdd21636140750ba7a3f4c6551c1baef969445a927185ec374a/types-setuptools-69.0.0.20240115.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -43,10 +43,10 @@ python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types-setuptools-69.0.0.20240106
-cd %{_builddir}/types-setuptools-69.0.0.20240106
+%setup -q -n types-setuptools-69.0.0.20240115
+cd %{_builddir}/types-setuptools-69.0.0.20240115
 pushd ..
-cp -a types-setuptools-69.0.0.20240106 buildavx2
+cp -a types-setuptools-69.0.0.20240115 buildavx2
 popd
 
 %build
@@ -54,7 +54,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1704729924
+export SOURCE_DATE_EPOCH=1705421286
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
