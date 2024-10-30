@@ -7,7 +7,7 @@
 #
 Name     : pypi-types_setuptools
 Version  : 75.2.0.20241025
-Release  : 122
+Release  : 123
 URL      : https://files.pythonhosted.org/packages/01/d7/cc9303a91d1137f11c5376ff4693f017126108f6c379a84ff4ea1b25e2ff/types-setuptools-75.2.0.20241025.tar.gz
 Source0  : https://files.pythonhosted.org/packages/01/d7/cc9303a91d1137f11c5376ff4693f017126108f6c379a84ff4ea1b25e2ff/types-setuptools-75.2.0.20241025.tar.gz
 Summary  : Typing stubs for setuptools
