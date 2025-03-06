@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-types_setuptools
-Version  : 75.8.0.20250225
-Release  : 137
-URL      : https://files.pythonhosted.org/packages/1f/ad/0747cfa03acc6cbeee3ce15704ac65fb4c7444f3cd5596c34d581e7366a7/types_setuptools-75.8.0.20250225.tar.gz
-Source0  : https://files.pythonhosted.org/packages/1f/ad/0747cfa03acc6cbeee3ce15704ac65fb4c7444f3cd5596c34d581e7366a7/types_setuptools-75.8.0.20250225.tar.gz
+Version  : 75.8.2.20250305
+Release  : 138
+URL      : https://files.pythonhosted.org/packages/4f/18/a996861f5225e7d533a8d8b6aa61bcc9183429a6b8bc93b850aa2e22974d/types_setuptools-75.8.2.20250305.tar.gz
+Source0  : https://files.pythonhosted.org/packages/4f/18/a996861f5225e7d533a8d8b6aa61bcc9183429a6b8bc93b850aa2e22974d/types_setuptools-75.8.2.20250305.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -17,6 +17,7 @@ Requires: pypi-types_setuptools-license = %{version}-%{release}
 Requires: pypi-types_setuptools-python = %{version}-%{release}
 Requires: pypi-types_setuptools-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
+BuildRequires : pypi(setuptools)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
@@ -32,7 +33,7 @@ It can be used by type-checking tools like
 [Pyre](https://pyre-check.org/),
 PyCharm, etc. to check code that uses `setuptools`. This version of
 `types-setuptools` aims to provide accurate annotations for
-`setuptools==75.8.*`.
+`setuptools~=75.8.2`.
 
 %package license
 Summary: license components for the pypi-types_setuptools package.
@@ -56,16 +57,17 @@ Summary: python3 components for the pypi-types_setuptools package.
 Group: Default
 Requires: python3-core
 Provides: pypi(types_setuptools)
+Requires: pypi(setuptools)
 
 %description python3
 python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types_setuptools-75.8.0.20250225
-cd %{_builddir}/types_setuptools-75.8.0.20250225
+%setup -q -n types_setuptools-75.8.2.20250305
+cd %{_builddir}/types_setuptools-75.8.2.20250305
 pushd ..
-cp -a types_setuptools-75.8.0.20250225 buildavx2
+cp -a types_setuptools-75.8.2.20250305 buildavx2
 popd
 
 %build
@@ -73,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1740496984
+export SOURCE_DATE_EPOCH=1741294439
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
