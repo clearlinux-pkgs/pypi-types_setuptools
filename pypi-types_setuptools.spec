@@ -6,10 +6,10 @@
 # autospec commit: fbbd4e3
 #
 Name     : pypi-types_setuptools
-Version  : 75.8.2.20250305
-Release  : 138
-URL      : https://files.pythonhosted.org/packages/4f/18/a996861f5225e7d533a8d8b6aa61bcc9183429a6b8bc93b850aa2e22974d/types_setuptools-75.8.2.20250305.tar.gz
-Source0  : https://files.pythonhosted.org/packages/4f/18/a996861f5225e7d533a8d8b6aa61bcc9183429a6b8bc93b850aa2e22974d/types_setuptools-75.8.2.20250305.tar.gz
+Version  : 76.0.0.20250313
+Release  : 139
+URL      : https://files.pythonhosted.org/packages/b8/0f/2d1d000c2be3919bcdea15e5da48456bf1e55c18d02c5509ea59dade1408/types_setuptools-76.0.0.20250313.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b8/0f/2d1d000c2be3919bcdea15e5da48456bf1e55c18d02c5509ea59dade1408/types_setuptools-76.0.0.20250313.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -33,7 +33,7 @@ It can be used by type-checking tools like
 [Pyre](https://pyre-check.org/),
 PyCharm, etc. to check code that uses `setuptools`. This version of
 `types-setuptools` aims to provide accurate annotations for
-`setuptools~=75.8.2`.
+`setuptools~=76.0.0`.
 
 %package license
 Summary: license components for the pypi-types_setuptools package.
@@ -64,10 +64,10 @@ python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types_setuptools-75.8.2.20250305
-cd %{_builddir}/types_setuptools-75.8.2.20250305
+%setup -q -n types_setuptools-76.0.0.20250313
+cd %{_builddir}/types_setuptools-76.0.0.20250313
 pushd ..
-cp -a types_setuptools-75.8.2.20250305 buildavx2
+cp -a types_setuptools-76.0.0.20250313 buildavx2
 popd
 
 %build
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1741294439
+export SOURCE_DATE_EPOCH=1742463626
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
