@@ -6,10 +6,10 @@
 # autospec commit: 9594167
 #
 Name     : pypi-types_setuptools
-Version  : 79.0.0.20250422
-Release  : 142
-URL      : https://files.pythonhosted.org/packages/ce/61/5b764d556977ab27976f335d7493dc267b0dbcb5fae7fe117547c292c069/types_setuptools-79.0.0.20250422.tar.gz
-Source0  : https://files.pythonhosted.org/packages/ce/61/5b764d556977ab27976f335d7493dc267b0dbcb5fae7fe117547c292c069/types_setuptools-79.0.0.20250422.tar.gz
+Version  : 80.0.0.20250429
+Release  : 143
+URL      : https://files.pythonhosted.org/packages/c5/49/0b22c24d20759d8594c094ec1c459b245b1a75e7e6bf104ff45c14efdb9f/types_setuptools-80.0.0.20250429.tar.gz
+Source0  : https://files.pythonhosted.org/packages/c5/49/0b22c24d20759d8594c094ec1c459b245b1a75e7e6bf104ff45c14efdb9f/types_setuptools-80.0.0.20250429.tar.gz
 Summary  : Typing stubs for setuptools
 Group    : Development/Tools
 License  : Apache-2.0
@@ -33,7 +33,7 @@ It can be used by type-checking tools like
 [Pyre](https://pyre-check.org/),
 PyCharm, etc. to check code that uses `setuptools`. This version of
 `types-setuptools` aims to provide accurate annotations for
-`setuptools==79.0.*`.
+`setuptools==80.0.*`.
 
 %package license
 Summary: license components for the pypi-types_setuptools package.
@@ -64,10 +64,10 @@ python3 components for the pypi-types_setuptools package.
 
 
 %prep
-%setup -q -n types_setuptools-79.0.0.20250422
-cd %{_builddir}/types_setuptools-79.0.0.20250422
+%setup -q -n types_setuptools-80.0.0.20250429
+cd %{_builddir}/types_setuptools-80.0.0.20250429
 pushd ..
-cp -a types_setuptools-79.0.0.20250422 buildavx2
+cp -a types_setuptools-80.0.0.20250429 buildavx2
 popd
 
 %build
@@ -75,7 +75,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1745331650
+export SOURCE_DATE_EPOCH=1745934088
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
